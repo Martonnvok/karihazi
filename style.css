@@ -1,19 +1,105 @@
 body{
-    background-color: black;
     color: white;
-}
-header{
-    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main{
- background-color: red;
+    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "ar ar as"
+    "f f f"
+    ;
+
+    /*A főrész arányai*/
+    margin: auto;
+    width: 1600px;
+    border-radius: 15px;
+   }
+header{
+    background-color: aqua;
+    text-align: center;
+    grid-area: h;
+
+    /*Cím arányai*/
+    border-radius: 15px;
+    margin: 10px;
 }
 article{
- background-color: azure;
+ background-color: brown;
+ grid-area: ar;
+
+ /*Tartalom arányai*/
+ border-radius: 15px;
+ margin: 10px;
+ padding: 10px;
 }
 aside{
- background-color: blue;
+ grid-area: as;
+
+ /*Tartalom arányai*/
+ margin: 10px;
 }
 footer{
- background-color: crimson;
+ background-color: green;
+ grid-area: f;
+
+ /*Tartalom arányai*/
+ text-align: center;
+ padding: auto;
+}
+
+/*Táblázat arányai*/
+table {
+    margin: 20px;
+}
+td, th{
+    border:2px solid black;
+}
+
+tbody tr:nth-child(even){
+    background-color: blue;
+}
+tbody tr:nth-child(odd){
+    background-color: red;
+}
+thead {
+    background-color: brown;
+}
+
+/*képek*/
+.fotok{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap:25px;
+}
+
+img{
+    border-radius: 15px;
+    padding: .4rem;
+    transition: all 0.3s linear;
+}
+
+img:hover{
+    filter: blur(5px);
+}
+
+ul{
+    list-style-type: circle;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "h "
+        "ar "
+        "as "
+        "f "
+        ;
+    }
 }
