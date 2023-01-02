@@ -1,9 +1,10 @@
 body{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(kepek/fekete.jpg);
 }
 main{
-    background-color: greenyellow;
+    background-image: url(kepek/tegla.jpg);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: 
@@ -17,17 +18,14 @@ main{
     width: 1600px;
     border-radius: 15px;
    }
-header{
-    background-color: aqua;
-    text-align: center;
-    grid-area: h;
 
-    /*Cím arányai*/
-    border-radius: 15px;
-    margin: 10px;
+b{
+    background-color: red;
+    color: black;
 }
+
 article{
- background-color: brown;
+ background-image: url(kepek/wood.jpg);
  grid-area: ar;
 
  /*Tartalom arányai*/
@@ -41,8 +39,21 @@ aside{
  /*Tartalom arányai*/
  margin: 10px;
 }
+header{
+    background-image: url(kepek/magma.jpg);
+    text-align: center;
+    grid-area: h;
+
+    /*Cím arányai*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 footer{
- background-color: green;
+background-image: url(kepek/magma.jpg);
+ border-bottom-left-radius: 15px ;
+ border-bottom-right-radius: 15px ;
+ margin-bottom: -20px;
  grid-area: f;
 
  /*Tartalom arányai*/
@@ -76,19 +87,27 @@ thead {
 }
 
 img{
+
     border-radius: 15px;
-    padding: .4rem;
+    padding: .4rem; 
     transition: all 0.3s linear;
 }
 
 img:hover{
     filter: blur(5px);
+
 }
 
 ul{
     list-style-type: circle;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/*második oldal*/
+.jatektipusok{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @media only screen and (max-width:500px){
