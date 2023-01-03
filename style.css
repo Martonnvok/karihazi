@@ -1,5 +1,5 @@
 body{
-    color: white;
+    color: orange;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(kepek/fekete.jpg);
 }
@@ -18,9 +18,14 @@ main{
     margin: auto;
     width: 1600px;
     border-radius: 15px;
-    border:double 5px rgb(255, 94, 0); 
+    border: double 5px rgb(255, 94, 0); 
+    box-shadow: 10px 10px rgb(187, 84, 24);
    }
 
+h1,h2,h3{
+    color: yellow;
+    text-shadow: 5px 5px 8px orangered;
+}
 b{
     background-color: red;
     color: black;
@@ -105,11 +110,14 @@ img:hover{
 }
 
 ul{
+    
     list-style-type: circle;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
-
+li{
+        padding: 5px;
+}
 /*második oldal*/
 .jatektipusok{
     display: grid;
@@ -121,7 +129,7 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-decoration: none;
-    color: white;
+    color: yellow;
     padding: 20px;
     border-radius: 15px;
 }
