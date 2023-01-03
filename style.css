@@ -9,7 +9,8 @@ main{
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas: 
     "h h h"
-    "ar ar as"
+    "as as as"
+    "ar ar ar"
     "f f f"
     ;
 
@@ -17,6 +18,7 @@ main{
     margin: auto;
     width: 1600px;
     border-radius: 15px;
+    border:double 5px rgb(255, 94, 0); 
    }
 
 b{
@@ -29,15 +31,17 @@ article{
  grid-area: ar;
 
  /*Tartalom arányai*/
- border-radius: 15px;
+    border-radius: 5px;
+ border:solid 5px rgba(165, 42, 42, 0.692); 
  margin: 10px;
  padding: 10px;
 }
 aside{
- grid-area: as;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    grid-area: as;
 
- /*Tartalom arányai*/
- margin: 10px;
 }
 header{
     background-image: url(kepek/magma.jpg);
@@ -62,21 +66,20 @@ background-image: url(kepek/magma.jpg);
 }
 
 /*Táblázat arányai*/
-table {
-    margin: 20px;
-}
 td, th{
     border:2px solid black;
+    padding: 10px;
+    font-size: 18px;;
 }
 
 tbody tr:nth-child(even){
-    background-color: blue;
+    background-image: url(kepek/rstone1.jpg);
 }
 tbody tr:nth-child(odd){
-    background-color: red;
+    background-image: url(kepek/bstone1.jpg);
 }
 thead {
-    background-color: brown;
+    background-image: url(kepek/magma.jpg);
 }
 
 /*képek*/
@@ -89,6 +92,8 @@ thead {
 img{
 
     border-radius: 15px;
+    border: solid 2px rgb(255, 94, 0); 
+    background-image: url(kepek/magma.jpg);
     padding: .4rem; 
     transition: all 0.3s linear;
 }
@@ -108,6 +113,13 @@ ul{
 .jatektipusok{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+/*linkek*/
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
 @media only screen and (max-width:500px){
