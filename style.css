@@ -95,13 +95,18 @@ thead {
     gap:25px;
 }
 
+.fotok2{
+    margin:auto;
+}
 img{
-
+    margin:20px;
     border-radius: 15px;
     border: solid 2px rgb(255, 94, 0); 
     background-image: url(kepek/magma.jpg);
     padding: .4rem; 
     transition: all 0.3s linear;
+    width: 320px;
+    height: 180px;
 }
 
 img:hover{
