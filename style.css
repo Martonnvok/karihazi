@@ -163,9 +163,21 @@ li a:hover{
         grid-template-columns: 1fr ;
         grid-template-areas: 
         "h "
-        "ar "
         "as "
+        "ar "
         "f "
         ;
+    }
+
+    .menu ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .fotok{
+        display: grid;
+        grid-template-columns:  1fr;
+        gap:25px;
     }
 }
