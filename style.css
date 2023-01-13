@@ -24,7 +24,6 @@ main{
 
 h1,h2,h3{
     color: yellow;
-    text-shadow: 5px 5px 8px orangered;
 }
 b{
     background-color: red;
